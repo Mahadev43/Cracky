@@ -1,0 +1,22 @@
+{
+  "name": "cracky-ai",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean",
+    "format": "biome format . --write",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "turbo": "^2.10.8",
+    "typescript": "^7.0.2"
+  }
+}

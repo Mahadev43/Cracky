@@ -1,0 +1,33 @@
+{
+  "name": "@cracky-ai/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "cracky": "./dist/index.js"
+  },
+  "dependencies": {
+    "@cracky-ai/foundation-kernel": "workspace:*",
+    "@cracky-ai/infrastructure-eventing": "workspace:*",
+    "@cracky-ai/domains-conversation": "workspace:*",
+    "@cracky-ai/infrastructure-storage-memory": "workspace:*",
+    "@cracky-ai/infrastructure-storage-sqlite": "workspace:*",
+    "@cracky-ai/domains-ai": "workspace:*",
+    "@cracky-ai/domains-provider": "workspace:*",
+    "@cracky-ai/provider-ollama": "workspace:*"
+  }
+}
